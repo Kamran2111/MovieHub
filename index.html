@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieHub</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header__content">
+          <a href="index.html" class="header__logo">🎥 MovieHub</a>
+          <form>
+            <input
+              class="header__search"
+              type="search"
+              placeholder="Search for movies..."
+            />
+          </form>
+        </div>
+      </header>
+      <main>
+        <section class="movies__section container">
+          <ul class="movies">
+            <li class="movie">
+              <img
+                src="movie-placeholder.jpg"
+                alt="Movie Title"
+                class="movie__image"
+              />
+              <div class="movie__info">
+                <h3 class="movie__title">Movie Title</h3>
+                <p class="movie__description">
+                  Short description of the movie.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination">
+            <button id="prevPage" class="pagination__button">Назад</button>
+            <button id="nextPage" class="pagination__button">Следуюший</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
